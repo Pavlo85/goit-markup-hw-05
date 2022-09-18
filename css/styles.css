@@ -30,6 +30,18 @@ img {
 
 .site-nav .link.current {
   color: var(--accent-color);
+
+
+}
+.site-nav .link.link.current::after{
+  width: 50px;
+  height: 5px;
+  background:var(--accent-color);
+  content: "";
+  display: flex;
+  position: absolute;
+  margin-top: 28px;
+  
 }
 
 .logo {
