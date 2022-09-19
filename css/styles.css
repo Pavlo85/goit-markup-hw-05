@@ -329,19 +329,12 @@ color: #FFFFFF;
 text-decoration: none;
 
 opacity: 0;
-
-
 }
-
 
 .portfolio-hover:hover .image-overlay,
 .image-overlay:focus{
   opacity:0.7;
 }
-
-
-
-
 
 
 .image-port{
@@ -351,8 +344,8 @@ opacity: 0;
   }
 
 /* якості */
-.quality
-  font-style: normal;
+.quality{
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -641,6 +634,9 @@ position: absolute;
 top: 0;
 right: 0;
 margin: 8px;
-/* stroke: #2196F3; */
 
+}
+
+button{
+border: hidden;
 }
