@@ -118,9 +118,6 @@ border-radius: 2px;
   justify-content: center;
 }
 
-.site-nav .link {
-  margin-right: 50px;
-}
 
 .link {
   color: var(--primary-text-color);
@@ -154,10 +151,21 @@ header nav {
 .icon-mail {
   margin-right: 10px;
   fill: currentColor;
+ 
 }
 .icon-mail:hover {
   fill: var(--accent-color);
 }
+
+
+.site-nav .link {
+  margin-right: 50px;
+   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+}
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -171,6 +179,12 @@ header nav {
 .link-flex {
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.link-flex:hover{
+  color: var(--accent-color);
 }
 .section-hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -219,17 +233,7 @@ header nav {
   justify-content: center;
 }
 
-.btn-portfolio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #212121;
-  min-height: 25px;
-  background-color: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 0;
-}
+
 .btn-portfolio-list .btn-portfolio {
   margin-right: 8px;
   min-height: 38px;
@@ -276,13 +280,30 @@ header nav {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
+  min-height: 25px;
+  background-color: #f5f4fa;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+
+  transition: 
+  color 250ms linear,
+  background-color 250ms linear,
+  box-shadow 250ms linear;
+}
+
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+
 }
 .visually-hidden {
   position: absolute;
@@ -401,10 +422,18 @@ opacity: 0;
   padding: 12px;
   display: block;
   border-radius: 50%;
-
   background-color: #ffffff;
   fill: #afb1b8;
-}
+
+
+     transition:  background-color 250ms linear,
+      fill 250ms linear;
+    
+   
+  
+  }
+  
+
 
 .full-icon:hover,
 .full-icon:focus {
@@ -487,6 +516,9 @@ color: #FFFFFF;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+
+  transition: color 250ms linear,
+   border-color 250ms linear;
 }
 
 .client-link {
@@ -515,6 +547,8 @@ color: #FFFFFF;
   color: #ffffff;
   margin-bottom: 9px;
   display: inline-block;
+
+  transition: color 250ms linear;
 }
 .footer-contact-mailtel {
   font-style: normal;
@@ -525,6 +559,7 @@ color: #FFFFFF;
   color: var(--secondary-text-color);
   margin-bottom: 9px;
   display: inline-block;
+  transition: color 250ms linear;
 }
 .footer-contact-mailtel.nopadding {
   padding-bottom: 0px;
@@ -552,8 +587,9 @@ color: #FFFFFF;
   padding: 12px;
   display: block;
   border-radius: 50%;
+ background: rgba(255, 255, 255, 0.1);
 
-  background: rgba(255, 255, 255, 0.1);
+ transition: background 250ms linear;
 }
 
 .full-iconf:hover,
