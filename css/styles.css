@@ -594,12 +594,12 @@ header nav {
   opacity: 0;
   pointer-events: none;
   /* на всяк випадок */
-  visibility: hidden;
+  /* visibility: hidden; */
   
 }
 
 .backdrop.is-hidden .modal {
-  transform: scale(0.2);
+  transform: scale(0.8);
 }
 .modal {
   position: absolute;
